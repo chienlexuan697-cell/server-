@@ -1,3 +1,31 @@
+// CHUYỂN TRANG
+const pages = document.querySelectorAll(".page");
+const navLinks = document.querySelectorAll(".nav-link");
+
+function switchPage(pageId) {
+  pages.forEach(page => page.classList.remove("active"));
+  navLinks.forEach(link => link.classList.remove("active"));
+
+  document.getElementById(pageId).classList.add("active");
+
+  const activeBtn = document.querySelector(`.nav-link[data-page="${pageId}"]`);
+  if (activeBtn) {
+    activeBtn.classList.add("active");
+  }
+
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth"
+  });
+}
+
+navLinks.forEach(link => {
+  link.addEventListener("click", () => {
+    const pageId = link.getAttribute("data-page");
+    switchPage(pageId);
+  });
+});
+
 // FILTER DỊCH VỤ
 const filterButtons = document.querySelectorAll(".filter-btn");
 const serviceCards = document.querySelectorAll(".service-card");
@@ -21,7 +49,7 @@ filterButtons.forEach(button => {
   });
 });
 
-// FAQ TOGGLE
+// FAQ
 const faqItems = document.querySelectorAll(".faq-item");
 
 faqItems.forEach(item => {
@@ -34,13 +62,14 @@ faqItems.forEach(item => {
 
 // CHỌN GÓI
 function chonGoi(goi) {
-  alert("Bạn đã chọn gói: " + goi + ". Hãy thay alert này bằng Zalo/Form thật nếu muốn.");
+  alert("Bạn đã chọn gói: " + goi);
+  switchPage("contact");
 }
 
-// FORM ĐẶT LỊCH
+// FORM
 const bookingForm = document.getElementById("bookingForm");
 
 bookingForm.addEventListener("submit", function(e) {
   e.preventDefault();
-  alert("Đặt lịch thành công! Hãy thay phần này bằng gửi form thật nếu muốn.");
+  alert("Đặt lịch thành công! Bạn có thể thay phần này bằng Zalo/Form thật.");
 });
