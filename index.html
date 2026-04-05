@@ -3,55 +3,69 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Giặt Ủn — Laundry Swiss</title>
-  <meta name="description" content="Dịch vụ giặt ủi phong cách hiện đại, sạch, nhanh, gọn." />
+  <title>Giặt Ủn — Swiss Laundry</title>
+  <meta name="description" content="Landing page giặt ủi phong cách Swiss Typographic, hiện đại, sạch, tối giản." />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+
   <!-- NAV -->
   <header class="nav">
     <div class="logo">GIẶT ỦN</div>
     <nav>
       <a href="#about">Giới thiệu</a>
       <a href="#services">Dịch vụ</a>
-      <a href="#process">Quy trình</a>
+      <a href="#pricing">Bảng giá</a>
+      <a href="#faq">FAQ</a>
       <a href="#contact">Liên hệ</a>
     </nav>
+    <a href="#contact" class="nav-btn">Đặt lịch</a>
   </header>
 
   <!-- HERO -->
   <section class="hero">
     <div class="hero-left">
-      <p class="eyebrow">LAUNDRY / CLEAN / FAST / MINIMAL</p>
+      <p class="eyebrow">SWISS TYPOGRAPHIC / LAUNDRY / DELIVERY / CLEAN</p>
       <h1>
-        Giặt sạch.<br />
-        Giao nhanh.<br />
-        Nhìn tinh.
+        Sạch hơn.<br />
+        Nhanh hơn.<br />
+        Gọn hơn.
       </h1>
       <p class="hero-text">
-        Dịch vụ giặt ủi hiện đại dành cho người bận rộn.
-        Nhận đồ tận nơi, xử lý gọn gàng, giao đúng hẹn.
+        Dịch vụ giặt ủi hiện đại cho người bận rộn.
+        Nhận đồ tận nơi, xử lý chỉn chu, giao đúng giờ.
       </p>
 
       <div class="hero-buttons">
-        <a href="#contact" class="btn black">Đặt lịch ngay</a>
-        <a href="#services" class="btn outline">Xem dịch vụ</a>
+        <a href="#pricing" class="btn black">Xem bảng giá</a>
+        <a href="#contact" class="btn outline">Đặt lịch ngay</a>
+      </div>
+
+      <div class="hero-stats">
+        <div><strong>24h</strong><span>Giao nhanh</span></div>
+        <div><strong>500+</strong><span>Khách hàng</span></div>
+        <div><strong>4.9★</strong><span>Đánh giá</span></div>
       </div>
     </div>
 
     <div class="hero-right">
-      <div class="hero-card">
+      <div class="grid-card big">
         <span>01</span>
         <h3>Pickup</h3>
-        <p>Nhận đồ tại nhà nhanh chóng.</p>
+        <p>Nhận đồ tận nơi theo khung giờ bạn chọn.</p>
       </div>
-      <div class="hero-card">
+      <div class="grid-card">
         <span>02</span>
-        <h3>Clean</h3>
-        <p>Giặt, sấy, ủi gọn và sạch.</p>
+        <h3>Wash</h3>
+        <p>Phân loại và giặt sạch cẩn thận.</p>
       </div>
-      <div class="hero-card">
+      <div class="grid-card">
         <span>03</span>
+        <h3>Iron</h3>
+        <p>Ủi gọn, phẳng và chỉn chu.</p>
+      </div>
+      <div class="grid-card">
+        <span>04</span>
         <h3>Deliver</h3>
         <p>Giao lại đúng giờ, đúng chuẩn.</p>
       </div>
@@ -59,37 +73,70 @@
   </section>
 
   <!-- ABOUT -->
-  <section class="section grid-two" id="about">
+  <section class="section split" id="about">
     <div>
       <p class="section-label">GIỚI THIỆU</p>
-      <h2>Thiết kế tối giản. Dịch vụ chỉn chu.</h2>
+      <h2>Thiết kế tối giản. Dịch vụ rõ ràng.</h2>
     </div>
     <div>
       <p>
-        Chúng tôi tập trung vào trải nghiệm giặt ủi rõ ràng, sạch sẽ và đúng giờ.
-        Không màu mè, không rườm rà — chỉ là một dịch vụ bạn có thể tin dùng hằng tuần.
+        Chúng tôi tạo ra trải nghiệm giặt ủi đơn giản: nhận đồ, xử lý sạch sẽ,
+        giao lại nhanh và đúng hẹn. Không rườm rà, không màu mè — chỉ tập trung
+        vào chất lượng thật sự.
       </p>
     </div>
   </section>
 
   <!-- SERVICES -->
   <section class="section" id="services">
-    <p class="section-label">DỊCH VỤ</p>
+    <div class="section-top">
+      <div>
+        <p class="section-label">DỊCH VỤ</p>
+        <h2>Nhiều lựa chọn hơn cho từng nhu cầu.</h2>
+      </div>
+
+      <div class="filters">
+        <button class="filter-btn active" data-filter="all">Tất cả</button>
+        <button class="filter-btn" data-filter="basic">Cơ bản</button>
+        <button class="filter-btn" data-filter="premium">Cao cấp</button>
+        <button class="filter-btn" data-filter="delivery">Giao nhận</button>
+      </div>
+    </div>
+
     <div class="service-grid">
-      <div class="service-card">
+      <div class="service-card" data-category="basic">
+        <span>CƠ BẢN</span>
         <h3>Giặt thường</h3>
-        <p>Quần áo hằng ngày, xử lý sạch và gọn.</p>
+        <p>Quần áo hằng ngày, sạch nhanh, xử lý gọn gàng.</p>
       </div>
-      <div class="service-card">
+
+      <div class="service-card" data-category="basic">
+        <span>CƠ BẢN</span>
         <h3>Giặt sấy</h3>
-        <p>Nhanh chóng, tiện lợi cho lịch bận.</p>
+        <p>Tiện lợi cho người bận, lấy nhanh trong ngày.</p>
       </div>
-      <div class="service-card">
-        <h3>Ủi đồ</h3>
-        <p>Phẳng phiu, gọn gàng, chỉn chu hơn.</p>
+
+      <div class="service-card" data-category="premium">
+        <span>CAO CẤP</span>
+        <h3>Ủi đồ cao cấp</h3>
+        <p>Áo sơ mi, quần tây, váy và đồ dễ nhăn.</p>
       </div>
-      <div class="service-card">
-        <h3>Nhận & giao tận nơi</h3>
+
+      <div class="service-card" data-category="premium">
+        <span>CAO CẤP</span>
+        <h3>Giặt đồ nhạy cảm</h3>
+        <p>Vải mỏng, đồ cao cấp, xử lý cẩn thận hơn.</p>
+      </div>
+
+      <div class="service-card" data-category="delivery">
+        <span>GIAO NHẬN</span>
+        <h3>Nhận đồ tận nơi</h3>
+        <p>Đến lấy đúng khung giờ bạn chọn.</p>
+      </div>
+
+      <div class="service-card" data-category="delivery">
+        <span>GIAO NHẬN</span>
+        <h3>Giao trả tận nơi</h3>
         <p>Tiết kiệm thời gian, không cần đi lại.</p>
       </div>
     </div>
@@ -98,26 +145,122 @@
   <!-- PROCESS -->
   <section class="section" id="process">
     <p class="section-label">QUY TRÌNH</p>
-    <div class="process-list">
-      <div class="process-item">
+    <h2 class="process-title">Quy trình rõ ràng, dễ hiểu.</h2>
+
+    <div class="timeline">
+      <div class="timeline-item">
         <span>01</span>
         <h3>Đặt lịch</h3>
-        <p>Gửi yêu cầu qua điện thoại hoặc tin nhắn.</p>
+        <p>Chọn dịch vụ, thời gian và ghi chú nhanh.</p>
       </div>
-      <div class="process-item">
+      <div class="timeline-item">
         <span>02</span>
         <h3>Nhận đồ</h3>
-        <p>Chúng tôi đến lấy tận nơi theo khung giờ bạn chọn.</p>
+        <p>Nhân viên đến lấy tận nơi theo lịch hẹn.</p>
       </div>
-      <div class="process-item">
+      <div class="timeline-item">
         <span>03</span>
         <h3>Xử lý</h3>
-        <p>Phân loại, giặt, sấy và ủi theo nhu cầu.</p>
+        <p>Giặt, sấy, ủi theo từng loại vải và yêu cầu.</p>
       </div>
-      <div class="process-item">
+      <div class="timeline-item">
         <span>04</span>
         <h3>Giao lại</h3>
-        <p>Đồ sạch sẽ, gấp gọn và trả đúng hẹn.</p>
+        <p>Đồ được gấp gọn, sạch sẽ và trả đúng giờ.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRICING -->
+  <section class="section" id="pricing">
+    <p class="section-label">BẢNG GIÁ</p>
+    <h2 class="pricing-title">Chọn gói phù hợp.</h2>
+
+    <div class="pricing-grid">
+      <div class="price-card">
+        <p class="plan">BASIC</p>
+        <h3>79K</h3>
+        <ul>
+          <li>Giặt thường</li>
+          <li>Sấy cơ bản</li>
+          <li>Hoàn thành 24h</li>
+          <li>Phù hợp đồ hằng ngày</li>
+        </ul>
+        <button onclick="chonGoi('BASIC')">Chọn gói</button>
+      </div>
+
+      <div class="price-card featured">
+        <p class="plan">POPULAR</p>
+        <h3>149K</h3>
+        <ul>
+          <li>Giặt + sấy + ủi</li>
+          <li>Ưu tiên xử lý nhanh</li>
+          <li>Gấp gọn đẹp</li>
+          <li>Phù hợp đa số khách hàng</li>
+        </ul>
+        <button onclick="chonGoi('POPULAR')">Chọn gói</button>
+      </div>
+
+      <div class="price-card">
+        <p class="plan">PREMIUM</p>
+        <h3>249K</h3>
+        <ul>
+          <li>Đồ cao cấp / nhạy cảm</li>
+          <li>Ủi kỹ hơn</li>
+          <li>Ưu tiên giao nhanh</li>
+          <li>Phù hợp áo sơ mi / váy / đồ đẹp</li>
+        </ul>
+        <button onclick="chonGoi('PREMIUM')">Chọn gói</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- REVIEWS -->
+  <section class="section" id="reviews">
+    <p class="section-label">ĐÁNH GIÁ</p>
+    <h2>Khách hàng nói gì.</h2>
+
+    <div class="review-grid">
+      <div class="review-card">
+        <p>“Đồ sạch, thơm vừa phải, giao đúng giờ. Dùng rất ổn.”</p>
+        <span>— Minh</span>
+      </div>
+      <div class="review-card">
+        <p>“Thiết kế web nhìn xịn mà dịch vụ cũng gọn gàng thật.”</p>
+        <span>— Huy</span>
+      </div>
+      <div class="review-card">
+        <p>“Đỡ phải tự giặt đồ cuối tuần. Rất tiện.”</p>
+        <span>— Linh</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="section" id="faq">
+    <p class="section-label">FAQ</p>
+    <h2>Câu hỏi thường gặp.</h2>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <button class="faq-question">Bao lâu nhận lại đồ?</button>
+        <div class="faq-answer">
+          <p>Thông thường trong 24h, có thể nhanh hơn nếu chọn gói ưu tiên.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question">Có nhận đồ tận nơi không?</button>
+        <div class="faq-answer">
+          <p>Có, chúng tôi hỗ trợ nhận và giao tận nơi theo khung giờ.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question">Đồ dễ hỏng có xử lý riêng không?</button>
+        <div class="faq-answer">
+          <p>Có, bạn có thể chọn gói Premium để xử lý kỹ hơn cho đồ nhạy cảm.</p>
+        </div>
       </div>
     </div>
   </section>
@@ -134,19 +277,36 @@
     <div>
       <p class="section-label">LIÊN HỆ</p>
       <h2>Bắt đầu đơn giản.</h2>
+      <p class="contact-text">
+        Thay số điện thoại, Zalo, Facebook hoặc địa chỉ thật của bạn vào đây.
+      </p>
     </div>
 
     <div class="contact-box">
       <p><strong>SĐT:</strong> 0123 456 789</p>
       <p><strong>Zalo:</strong> @giatun</p>
+      <p><strong>Facebook:</strong> fb.com/giatun</p>
       <p><strong>Địa chỉ:</strong> Thanh Hóa, Việt Nam</p>
-      <button onclick="thongBao()">Đặt lịch ngay</button>
+
+      <form id="bookingForm">
+        <input type="text" placeholder="Tên của bạn" required />
+        <input type="tel" placeholder="Số điện thoại" required />
+        <select required>
+          <option value="">Chọn dịch vụ</option>
+          <option>Giặt thường</option>
+          <option>Giặt sấy</option>
+          <option>Ủi đồ</option>
+          <option>Premium</option>
+        </select>
+        <textarea placeholder="Ghi chú thêm..."></textarea>
+        <button type="submit">Gửi đặt lịch</button>
+      </form>
     </div>
   </section>
 
   <!-- FOOTER -->
   <footer class="footer">
-    <p>GIẶT ỦN / SWISS TYPOGRAPHIC LANDING PAGE</p>
+    <p>GIẶT ỦN / SWISS TYPOGRAPHIC LANDING PAGE / 2026</p>
   </footer>
 
   <script src="script.js"></script>
