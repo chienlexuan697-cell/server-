@@ -1,17 +1,153 @@
 <!DOCTYPE html>
 <html lang="vi">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Web đầu tiên của tôi</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Giặt Ủn — Laundry Swiss</title>
+  <meta name="description" content="Dịch vụ giặt ủi phong cách hiện đại, sạch, nhanh, gọn." />
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <div class="box">
-    <h1>Xin chào 👋</h1>
-    <p>Đây là web đầu tiên của tôi.</p>
-    <button onclick="doiMau()">Bấm vào tôi</button>
-  </div>
+  <!-- NAV -->
+  <header class="nav">
+    <div class="logo">GIẶT ỦN</div>
+    <nav>
+      <a href="#about">Giới thiệu</a>
+      <a href="#services">Dịch vụ</a>
+      <a href="#process">Quy trình</a>
+      <a href="#contact">Liên hệ</a>
+    </nav>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-left">
+      <p class="eyebrow">LAUNDRY / CLEAN / FAST / MINIMAL</p>
+      <h1>
+        Giặt sạch.<br />
+        Giao nhanh.<br />
+        Nhìn tinh.
+      </h1>
+      <p class="hero-text">
+        Dịch vụ giặt ủi hiện đại dành cho người bận rộn.
+        Nhận đồ tận nơi, xử lý gọn gàng, giao đúng hẹn.
+      </p>
+
+      <div class="hero-buttons">
+        <a href="#contact" class="btn black">Đặt lịch ngay</a>
+        <a href="#services" class="btn outline">Xem dịch vụ</a>
+      </div>
+    </div>
+
+    <div class="hero-right">
+      <div class="hero-card">
+        <span>01</span>
+        <h3>Pickup</h3>
+        <p>Nhận đồ tại nhà nhanh chóng.</p>
+      </div>
+      <div class="hero-card">
+        <span>02</span>
+        <h3>Clean</h3>
+        <p>Giặt, sấy, ủi gọn và sạch.</p>
+      </div>
+      <div class="hero-card">
+        <span>03</span>
+        <h3>Deliver</h3>
+        <p>Giao lại đúng giờ, đúng chuẩn.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="section grid-two" id="about">
+    <div>
+      <p class="section-label">GIỚI THIỆU</p>
+      <h2>Thiết kế tối giản. Dịch vụ chỉn chu.</h2>
+    </div>
+    <div>
+      <p>
+        Chúng tôi tập trung vào trải nghiệm giặt ủi rõ ràng, sạch sẽ và đúng giờ.
+        Không màu mè, không rườm rà — chỉ là một dịch vụ bạn có thể tin dùng hằng tuần.
+      </p>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section class="section" id="services">
+    <p class="section-label">DỊCH VỤ</p>
+    <div class="service-grid">
+      <div class="service-card">
+        <h3>Giặt thường</h3>
+        <p>Quần áo hằng ngày, xử lý sạch và gọn.</p>
+      </div>
+      <div class="service-card">
+        <h3>Giặt sấy</h3>
+        <p>Nhanh chóng, tiện lợi cho lịch bận.</p>
+      </div>
+      <div class="service-card">
+        <h3>Ủi đồ</h3>
+        <p>Phẳng phiu, gọn gàng, chỉn chu hơn.</p>
+      </div>
+      <div class="service-card">
+        <h3>Nhận & giao tận nơi</h3>
+        <p>Tiết kiệm thời gian, không cần đi lại.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROCESS -->
+  <section class="section" id="process">
+    <p class="section-label">QUY TRÌNH</p>
+    <div class="process-list">
+      <div class="process-item">
+        <span>01</span>
+        <h3>Đặt lịch</h3>
+        <p>Gửi yêu cầu qua điện thoại hoặc tin nhắn.</p>
+      </div>
+      <div class="process-item">
+        <span>02</span>
+        <h3>Nhận đồ</h3>
+        <p>Chúng tôi đến lấy tận nơi theo khung giờ bạn chọn.</p>
+      </div>
+      <div class="process-item">
+        <span>03</span>
+        <h3>Xử lý</h3>
+        <p>Phân loại, giặt, sấy và ủi theo nhu cầu.</p>
+      </div>
+      <div class="process-item">
+        <span>04</span>
+        <h3>Giao lại</h3>
+        <p>Đồ sạch sẽ, gấp gọn và trả đúng hẹn.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta">
+    <p>READY FOR CLEAN CLOTHES?</p>
+    <h2>Đặt lịch giặt ủi trong 1 phút.</h2>
+    <a href="#contact" class="btn black">Liên hệ ngay</a>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="section contact" id="contact">
+    <div>
+      <p class="section-label">LIÊN HỆ</p>
+      <h2>Bắt đầu đơn giản.</h2>
+    </div>
+
+    <div class="contact-box">
+      <p><strong>SĐT:</strong> 0123 456 789</p>
+      <p><strong>Zalo:</strong> @giatun</p>
+      <p><strong>Địa chỉ:</strong> Thanh Hóa, Việt Nam</p>
+      <button onclick="thongBao()">Đặt lịch ngay</button>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <p>GIẶT ỦN / SWISS TYPOGRAPHIC LANDING PAGE</p>
+  </footer>
 
   <script src="script.js"></script>
 </body>
